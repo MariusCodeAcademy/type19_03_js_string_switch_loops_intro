@@ -42,3 +42,51 @@ switch (diena) {
   default:
     console.log('Netinkama dienos reikšmė');
 }
+
+let value2 = 'hello';
+value2 = 45;
+value2 = true;
+value2 = [];
+
+// parasyti switch statment kad nustayti kokio tipo yra value2
+switch (typeof value2) {
+  case 'string':
+    console.log('textas');
+    break;
+  case 'boolean':
+    console.log('Tiesa netiesa');
+    break;
+  case 'number':
+    console.log('Skaiciuks');
+    break;
+  default:
+    console.log(' neskaicius nestringas ir neboolean');
+}
+// su konsole log pranesti lietuviskai koks yra value2 tipas
+// pranesti jei reiksme yra neskaicius nestringas ir neboolean
+
+let amzius = -80;
+
+// jei amzius yra iki 18 - vaikas
+// jei amzius yra 18 iki 55 - suauges
+// jei daugiau nei 56 - paauges
+
+if (amzius < 18) {
+  console.log('vaikas');
+} else if (amzius < 55) {
+  console.log('suauges');
+} else if (amzius > 56) {
+  console.log('paauges');
+}
+
+switch (true) {
+  case amzius < 18:
+    console.log('vaikas');
+    break;
+  case amzius < 55:
+    console.log('suauges');
+    break;
+  case amzius > 56:
+    console.log('paauges');
+    break;
+}
