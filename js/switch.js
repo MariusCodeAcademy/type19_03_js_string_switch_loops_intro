@@ -65,7 +65,7 @@ switch (typeof value2) {
 // su konsole log pranesti lietuviskai koks yra value2 tipas
 // pranesti jei reiksme yra neskaicius nestringas ir neboolean
 
-let amzius = -80;
+let amzius = 80;
 
 // jei amzius yra iki 18 - vaikas
 // jei amzius yra 18 iki 55 - suauges
