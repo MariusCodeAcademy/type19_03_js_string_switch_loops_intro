@@ -24,7 +24,7 @@ let adminOrNot = isAdmin === true ? 'Admin' : 'Svecias';
 let greet = `Sveiki ${adminOrNot}`;
 console.log('greet ===', greet);
 
-let amzius = 25;
+let amzius = 45;
 // jei amzius yra iki 18 - vaikas
 // jei amzius yra 18 iki 55 - suauges
 // jei daugiau nei 56 - paauges
@@ -36,4 +36,14 @@ if (amzius < 18) {
 } else if (amzius > 56) {
   amziausZodis = 'paauges';
 }
+
+amziausZodis =
+  amzius < 18
+    ? 'vaikas'
+    : amzius < 55
+    ? 'suauges'
+    : amzius > 56
+    ? 'paauges'
+    : 'Blogai parinktas skaicius';
+
 console.log('amziausZodis ===', amziausZodis);
